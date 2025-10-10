@@ -68,13 +68,6 @@ export const Navbar: React.FC<NavbarProps> = ({ outlet }) => {
                   Tables
                 </NavLink>
               </li>
-              <li className="ml-4">
-                <div
-                  className="bg-[#FFF0CE] font-bold text-[#3396D3] hover:scale-110"
-                >
-                  Logout
-                </div>
-              </li>
             </ul>
           </div>
         </div>
