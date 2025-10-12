@@ -80,30 +80,6 @@
       "totalAmount": 1150,
       "status": "completed",
       "createdAt": "2025-10-12T13:45:00Z"
-    },
-    {
-      "id": 5,
-      "customerName": "Emily Davis",
-      "items": [
-        {
-          "name": "Pasta Carbonara",
-          "quantity": 1,
-          "price": 350
-        },
-        {
-          "name": "Garlic Bread",
-          "quantity": 1,
-          "price": 150
-        },
-        {
-          "name": "Chocolate Cake",
-          "quantity": 1,
-          "price": 250
-        }
-      ],
-      "totalAmount": 750,
-      "status": "pending",
-      "createdAt": "2025-10-12T14:20:00Z"
     }
   ],
   "menu": [
@@ -234,38 +210,6 @@
       "price": 450,
       "description": "Premium ribeye steak cooked to perfection",
       "available": true
-    },
-    {
-      "id": 17,
-      "name": "Tacos",
-      "category": "Main Course",
-      "price": 300,
-      "description": "Three soft tacos with your choice of filling",
-      "available": true
-    },
-    {
-      "id": 18,
-      "name": "Nachos",
-      "category": "Appetizers",
-      "price": 275,
-      "description": "Tortilla chips with cheese and jalapeños",
-      "available": true
-    },
-    {
-      "id": 19,
-      "name": "Wings",
-      "category": "Appetizers",
-      "price": 350,
-      "description": "Spicy chicken wings with dipping sauce",
-      "available": true
-    },
-    {
-      "id": 20,
-      "name": "Cheesecake",
-      "category": "Desserts",
-      "price": 275,
-      "description": "New York style cheesecake",
-      "available": false
     }
   ],
   "customers": [
@@ -327,30 +271,6 @@
       "id": 8,
       "number": 8,
       "capacity": 2,
-      "status": "reserved"
-    },
-    {
-      "id": 9,
-      "number": 9,
-      "capacity": 6,
-      "status": "available"
-    },
-    {
-      "id": 10,
-      "number": 10,
-      "capacity": 4,
-      "status": "occupied"
-    },
-    {
-      "id": 11,
-      "number": 11,
-      "capacity": 2,
-      "status": "available"
-    },
-    {
-      "id": 12,
-      "number": 12,
-      "capacity": 10,
       "status": "reserved"
     }
   ],
@@ -420,39 +340,6 @@
       "partySize": 4,
       "status": "pending",
       "specialRequests": "High chair needed"
-    },
-    {
-      "id": 7,
-      "customerName": "David Martinez",
-      "customerId": 8,
-      "tableNumber": 7,
-      "date": "2025-10-13",
-      "time": "19:00",
-      "partySize": 3,
-      "status": "confirmed",
-      "specialRequests": "Quiet area preferred"
-    },
-    {
-      "id": 8,
-      "customerName": "Lisa Anderson",
-      "customerId": 9,
-      "tableNumber": 5,
-      "date": "2025-10-14",
-      "time": "18:00",
-      "partySize": 2,
-      "status": "confirmed",
-      "specialRequests": ""
-    },
-    {
-      "id": 9,
-      "customerName": "James Taylor",
-      "customerId": 10,
-      "tableNumber": 11,
-      "date": "2025-10-14",
-      "time": "20:30",
-      "partySize": 5,
-      "status": "pending",
-      "specialRequests": "Anniversary celebration"
     }
   ]
 }
