@@ -9,7 +9,7 @@ import {
 // Pages
 import { AdminPage } from "./admin/Page";
 import { Tables } from "./admin/tables/Page";
-import { Customers } from "./admin/customers/Page";
+import { Reservations } from "./admin/reservations/Page";
 import { Orders } from "./admin/orders/Page";
 import { Menu } from "./admin/menu/Page";
 
@@ -20,11 +20,11 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Navigate to={"/admin/customers"} replace />}
+            element={<Navigate to={"/admin/reservations"} replace />}
           />
 
           <Route path="/admin" element={<AdminPage />}>
-            <Route path="customers" element={<Customers />} />
+            <Route path="reservations" element={<Reservations />} />
             <Route path="orders" element={<Orders />} />
             <Route path="menu" element={<Menu />} />
             <Route path="tables" element={<Tables />} />

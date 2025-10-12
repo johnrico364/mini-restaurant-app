@@ -12,7 +12,7 @@ export const Navbar: React.FC<NavbarProps> = ({ outlet }) => {
       <input id="my-navbar" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="navbar bg-base-300 w-full">
+        <div className="navbar bg-[#FFF0CE] w-full">
           <div className="flex-none lg:hidden">
             <label
               htmlFor="my-navbar"
@@ -30,12 +30,12 @@ export const Navbar: React.FC<NavbarProps> = ({ outlet }) => {
               {/* Navbar menu content here */}
               <li>
                 <NavLink
-                  to={"/admin/customers"}
+                  to={"/admin/reservations"}
                   className={({ isActive }) =>
                     isActive ? "bg-[#3396D3] text-white" : ""
                   }
                 >
-                  Customers
+                  Reservations
                 </NavLink>
               </li>
               <li>
