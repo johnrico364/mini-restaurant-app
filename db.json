@@ -37,6 +37,145 @@
       "totalAmount": 17.97,
       "status": "completed",
       "createdAt": "2025-10-05T11:15:00Z"
+    },
+    {
+      "id": 3,
+      "customerName": "Sarah Wilson",
+      "items": [
+        {
+          "name": "Grilled Chicken",
+          "quantity": 1,
+          "price": 350
+        },
+        {
+          "name": "Caesar Salad",
+          "quantity": 1,
+          "price": 275
+        },
+        {
+          "name": "Iced Tea",
+          "quantity": 2,
+          "price": 120
+        }
+      ],
+      "totalAmount": 865,
+      "status": "in-progress",
+      "createdAt": "2025-10-12T12:30:00Z"
+    },
+    {
+      "id": 4,
+      "customerName": "Michael Brown",
+      "items": [
+        {
+          "name": "Steak",
+          "quantity": 2,
+          "price": 450
+        },
+        {
+          "name": "Wine",
+          "quantity": 1,
+          "price": 250
+        }
+      ],
+      "totalAmount": 1150,
+      "status": "completed",
+      "createdAt": "2025-10-12T13:45:00Z"
+    },
+    {
+      "id": 5,
+      "customerName": "Emily Davis",
+      "items": [
+        {
+          "name": "Pasta Carbonara",
+          "quantity": 1,
+          "price": 350
+        },
+        {
+          "name": "Garlic Bread",
+          "quantity": 1,
+          "price": 150
+        },
+        {
+          "name": "Chocolate Cake",
+          "quantity": 1,
+          "price": 250
+        }
+      ],
+      "totalAmount": 750,
+      "status": "pending",
+      "createdAt": "2025-10-12T14:20:00Z"
+    },
+    {
+      "id": 6,
+      "customerName": "David Martinez",
+      "items": [
+        {
+          "name": "Fish and Chips",
+          "quantity": 1,
+          "price": 400
+        },
+        {
+          "name": "Onion Rings",
+          "quantity": 1,
+          "price": 200
+        },
+        {
+          "name": "Milkshake",
+          "quantity": 2,
+          "price": 200
+        }
+      ],
+      "totalAmount": 1000,
+      "status": "cancelled",
+      "createdAt": "2025-10-12T15:00:00Z"
+    },
+    {
+      "id": 7,
+      "customerName": "Lisa Anderson",
+      "items": [
+        {
+          "name": "Tacos",
+          "quantity": 2,
+          "price": 300
+        },
+        {
+          "name": "Nachos",
+          "quantity": 1,
+          "price": 275
+        },
+        {
+          "name": "Soda",
+          "quantity": 2,
+          "price": 80
+        }
+      ],
+      "totalAmount": 1035,
+      "status": "in-progress",
+      "createdAt": "2025-10-12T15:30:00Z"
+    },
+    {
+      "id": 8,
+      "customerName": "James Taylor",
+      "items": [
+        {
+          "name": "Wings",
+          "quantity": 2,
+          "price": 350
+        },
+        {
+          "name": "Pizza",
+          "quantity": 1,
+          "price": 350
+        },
+        {
+          "name": "Ice Cream Sundae",
+          "quantity": 2,
+          "price": 150
+        }
+      ],
+      "totalAmount": 1350,
+      "status": "completed",
+      "createdAt": "2025-10-12T16:15:00Z"
     }
   ],
   "menu": [
@@ -204,11 +343,13 @@
   "customers": [
     {
       "id": 1,
-      "name": "John Doe"
+      "name": "John Doe",
+      "table": 3
     },
     {
       "id": 2,
-      "name": "Jane Smith"
+      "name": "Jane Smith",
+      "table": 5
     }
   ],
   "tables": [
@@ -290,7 +431,7 @@
       "id": 1,
       "customerName": "John Doe",
       "customerId": 1,
-      "tableId": 4,
+      "tableNumber": 4,
       "date": "2025-10-06",
       "time": "19:00",
       "partySize": 4,
@@ -301,7 +442,7 @@
       "id": 2,
       "customerName": "Jane Smith",
       "customerId": 2,
-      "tableId": 8,
+      "tableNumber": 8,
       "date": "2025-10-06",
       "time": "20:30",
       "partySize": 2,
@@ -311,13 +452,90 @@
     {
       "id": 3,
       "customerName": "Bob Johnson",
-      "customerId": null,
-      "tableId": 12,
+      "customerId": 4,
+      "tableNumber": 12,
       "date": "2025-10-07",
       "time": "18:00",
       "partySize": 8,
       "status": "pending",
       "specialRequests": "Birthday celebration"
+    },
+    {
+      "id": 4,
+      "customerName": "Sarah Wilson",
+      "customerId": 5,
+      "tableNumber": 6,
+      "date": "2025-10-12",
+      "time": "19:30",
+      "partySize": 6,
+      "status": "confirmed",
+      "specialRequests": "Allergic to nuts"
+    },
+    {
+      "id": 5,
+      "customerName": "Michael Brown",
+      "customerId": 6,
+      "tableNumber": 3,
+      "date": "2025-10-12",
+      "time": "20:00",
+      "partySize": 2,
+      "status": "cancelled",
+      "specialRequests": ""
+    },
+    {
+      "id": 6,
+      "customerName": "Emily Davis",
+      "customerId": 7,
+      "tableNumber": 10,
+      "date": "2025-10-13",
+      "time": "18:30",
+      "partySize": 4,
+      "status": "pending",
+      "specialRequests": "High chair needed"
+    },
+    {
+      "id": 7,
+      "customerName": "David Martinez",
+      "customerId": 8,
+      "tableNumber": 7,
+      "date": "2025-10-13",
+      "time": "19:00",
+      "partySize": 3,
+      "status": "confirmed",
+      "specialRequests": "Quiet area preferred"
+    },
+    {
+      "id": 8,
+      "customerName": "Lisa Anderson",
+      "customerId": 9,
+      "tableNumber": 5,
+      "date": "2025-10-14",
+      "time": "18:00",
+      "partySize": 2,
+      "status": "confirmed",
+      "specialRequests": ""
+    },
+    {
+      "id": 9,
+      "customerName": "James Taylor",
+      "customerId": 10,
+      "tableNumber": 11,
+      "date": "2025-10-14",
+      "time": "20:30",
+      "partySize": 5,
+      "status": "pending",
+      "specialRequests": "Anniversary celebration"
+    },
+    {
+      "id": 10,
+      "customerName": "Amy Chen",
+      "customerId": 11,
+      "tableNumber": 2,
+      "date": "2025-10-15",
+      "time": "19:30",
+      "partySize": 2,
+      "status": "cancelled",
+      "specialRequests": "Vegetarian options"
     }
   ]
 }
