@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
 // GET ALL RESERVATIONS
-export const useCostomers = () => {
+export const useCustomers = () => {
   return useQuery({
     queryKey: ["customers"],
     queryFn: async () => {

@@ -1,4 +1,4 @@
-import { useCostomers } from "../hooks/useCustomers";
+import { useCustomers } from "../hooks/useCustomers";
 
 interface CustomerTableProps {
   name: string;
@@ -6,7 +6,7 @@ interface CustomerTableProps {
 }
 
 export const CustomerTable = () => {
-  const { data: customers, isLoading } = useCostomers();
+  const { data: customers, isLoading } = useCustomers();
 
   if (isLoading) {
     return <div className="text-[1.8rem] font-bold">Loading customer data...</div>
@@ -31,7 +31,7 @@ export const CustomerTable = () => {
           <tbody>
             {customers?.map((customer: CustomerTableProps, i: number) => {
               return (
-                <tr>
+                <tr key={i}>
                   <th>{i + 1}</th>
                   <td>{customer.name}</td>
                   <td>{customer.table}</td>

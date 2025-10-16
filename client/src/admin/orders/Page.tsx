@@ -1,3 +1,7 @@
+import { OrdersTable } from "./components/OrdersTable"
+
 export const Orders = () => {
-  return <div>This is order</div>
+  return <>
+    <OrdersTable/>
+  </>
 }
