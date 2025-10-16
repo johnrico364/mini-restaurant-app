@@ -7,15 +7,15 @@
         {
           "name": "Burger",
           "quantity": 2,
-          "price": 8.99
+          "price": 250
         },
         {
           "name": "Fries",
           "quantity": 1,
-          "price": 3.99
+          "price": 250
         }
       ],
-      "totalAmount": 21.97,
+      "totalAmount": 750,
       "status": "pending",
       "createdAt": "2025-10-05T10:30:00Z"
     },
@@ -26,15 +26,15 @@
         {
           "name": "Pizza",
           "quantity": 1,
-          "price": 12.99
+          "price": 350
         },
         {
           "name": "Soda",
           "quantity": 2,
-          "price": 2.49
+          "price": 80
         }
       ],
-      "totalAmount": 17.97,
+      "totalAmount": 510,
       "status": "completed",
       "createdAt": "2025-10-05T11:15:00Z"
     },
