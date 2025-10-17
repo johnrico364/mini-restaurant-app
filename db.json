@@ -129,7 +129,7 @@
       "category": "Appetizers",
       "price": 275,
       "description": "Fresh romaine lettuce with Caesar dressing",
-      "available": true
+      "available": false
     },
     {
       "id": 7,
@@ -153,7 +153,7 @@
       "category": "Sides",
       "price": 200,
       "description": "Crispy golden onion rings",
-      "available": true
+      "available": false
     },
     {
       "id": 10,

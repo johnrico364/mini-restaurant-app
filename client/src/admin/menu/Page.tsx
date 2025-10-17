@@ -1,3 +1,9 @@
+import { MenuTable } from "./components/MenuTable";
+
 export const Menu = () => {
-  return <div>This is Menu list</div>
-}
+  return (
+    <div>
+      <MenuTable />
+    </div>
+  );
+};
